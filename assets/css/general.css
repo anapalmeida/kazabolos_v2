@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+:root {
+    height: 100vh;
+    overflow-x: hidden;
+    --dark-brown: #602E1C;
+    --light-brown: #AD734D;
+}
+
+body {
+    background: var(--light-brown);
+    color: var(--dark-brown)
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
