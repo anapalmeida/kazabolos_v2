@@ -15,10 +15,6 @@
    transition: 0.3s;
 }
 
-.navbar-light .navbar-brand {
-    padding-left: 30px;
-}
-
 @media screen and (max-width: 991px) {
     .navbar-light .nav-item {
         display: flex;
@@ -113,7 +109,16 @@
         top: 21px;
         left: 8px;
         }
+        .navbar-light .navbar-brand {
+            padding-left: 30px;
+        }
         .navbar.open {
             background-color: #fff;
+        }
+        .navbar-nav.open {
+            height: 100%;
+        }
+        .navbar-light .nav-item .nav-link:hover {
+            color: var(--dark-brown);
         }
 }
