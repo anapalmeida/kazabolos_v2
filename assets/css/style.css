@@ -188,6 +188,21 @@
     font-size: 14px;
 }
 
+.attribution {
+    background-color: var(--dark-brown); 
+    width: 100%; 
+    color: var(--light-brown); 
+    height: 60px; 
+    font-family: Nanum Gothic; 
+    text-transform: uppercase; 
+    font-weight: 200; 
+    font-size: 10px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
 @media screen and (max-width: 991px) {
     /* Navbars (Mobile, Top and Sticky) */
     .navbar-toggler {
@@ -344,17 +359,20 @@
     }
     /* Carousel masks */
     .first-slide-title {
-    font-size: 60px;
+        font-size: 60px;
     }
 
     .first-slide-caption {
-    font-size: 17px;
+        font-size: 17px;
     }
 
     .first-slide-button {
-    font-size: 15px;
+        font-size: 15px;
 
-    width: 200px;
-    height: 53px;
-}
+        width: 200px;
+        height: 53px;
+    }
+    .attribution {
+        height: 50px; 
+    }
 }
