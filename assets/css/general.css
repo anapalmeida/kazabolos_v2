@@ -11,10 +11,12 @@ body,
     overflow-x: hidden;
     --dark-brown: #602E1C;
     --light-brown: #AD734D;
+    --pinkish: #f2e7c7;
+    --orange: #C95514;
 }
 
 body {
-    background: var(--light-brown);
+    background: white;
     color: var(--dark-brown)
 }
 
@@ -24,6 +26,11 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: inherit;
 }
 
 #root {

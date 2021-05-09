@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/general.css">
     <script src="assets/js/script.js"></script>
@@ -14,35 +17,215 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg  navbar-light">
-    
-    <div class="collapse navbar-collapse order-lg-1 order-3" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">SOBRE NÓS<span class="sr-only">(current)</span></a>
-        </li>
-    </div>
 
-    <img  class="navbar-brand order-1" src="assets/images/logo.svg"><a href="#"></a></img>
-    <button id="toggle-btn" onclick="animatedClose()" class="navbar-toggler order-2 " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon3"><span id="fst-line"></span><span id="scnd-line"></span><span id="trd-line"></span></div>
-    </button>
+    <header class="site-header">
+
+        <!-- Fixed to the top Logo Desktop Wrapper -->
+        <div class="site-header-top">
+          <!-- Main logo -->
+            <img src="assets/images/logo.svg" alt="Kaza Bolos"><a href="#"></a></img>
+            <!-- Main logo -->
+            <!-- Hamburguer button for the mobile Navbar -->
+            <button id="toggle-btn" onclick="animatedClose()" class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="animated-icon3"><span id="fst-line"></span><span id="scnd-line"></span><span id="trd-line"></span></div>
+            </button>
+            <!-- Hamburguer button for the mobile Navbar  -->
+        </div>
+        <!-- Fixed to the top Logo Desktop Wrapper -->
+
+        <!-- Fixed to the top Navbar Desktop Wrapper -->
+        <nav class="navbar navbar-expand-lg navbar-light main-menu ">
+            <div>
+              <!-- Navbar items -->
+                <ul class="navbar-nav main-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SOBRE NÓS<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">COMO ENCOMENDAR<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FALE CONOSCO<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <!-- Navbar items -->
+            </div>
+        </nav>
+        <!-- Fixed to the top Navbar Desktop Wrapper -->
+
+        <!-- Navbar Mobile Wrapper -->
+        <nav class="site-header-mobile">
+          <!-- Navbar items -->
+            <ul class="navbar-nav mobile-menu">
+                <li class="nav-item">
+                    <a class="nav-link mobile-link" href="#">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-link" href="#">SOBRE NÓS<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-link" href="#">COMO ENCOMENDAR<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-link" href="#">FALE CONOSCO<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <!-- Navbar items -->
+        </nav>
+        <!-- Navbar Mobile Wrapper -->
+
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-1" class="carousel slide carousel-fade " data-ride="carousel" data-interval="3000">
+
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-1" data-slide-to="1"></li>
+                <li data-target="#carousel-example-1" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+                    <!--Mask-->
+                    <div class="view">
+                        <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+                            <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
+                                <br>
+                                <br>
+                                <br>
+                                <li>
+                                    <h1 class="first-slide-title">NOVOS<br />SABORES</h1>
+                                </li>
+                                <li>
+                                    <p class="first-slide-caption">Confira os novos sabores pensados especialmente para você</p>
+                                </li>
+                                <li class="first-slide-button">
+                                    <a target="_blank" href="#" class="first-slide-button">NOSSO CARDÁPIO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/.Mask-->
+                </div>
+                <!--/.First slide-->
+
+                <!--Second slide -->
+                <div class="carousel-item">
+                    <!--Mask-->
+                    <div class="view">
+                        <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+                            <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
+                                <li>
+                                    <h1 class="first-slide-title">NOVOS<br />SABORES</h1>
+                                </li>
+                                <li>
+                                    <p class="first-slide-caption">Confira os novos sabores pensados especialmente para você</p>
+                                </li>
+                                <li class="first-slide-button">
+                                    <a target="_blank" href="#" class="first-slide-button">NOSSO CARDÁPIO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/.Mask-->
+                </div>
+                <!--/.Second slide -->
+
+                <!--Third slide-->
+                <div class="carousel-item">
+                    <!--Mask-->
+                    <div class="view">
+                        <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+                            <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
+                                <li>
+                                    <h1 class="first-slide-title">NOVOS<br />SABORES</h1>
+                                </li>
+                                <li>
+                                    <p class="first-slide-caption">Confira os novos sabores pensados especialmente para você</p>
+                                </li>
+                                <li class="first-slide-button">
+                                    <a target="_blank" href="#" class="first-slide-button">NOSSO CARDÁPIO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/.Mask-->
+                </div>
+                <!--/.Third slide-->
+
+            </div>
+            <!--/.Slides-->
+
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-example-1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anteriro</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+            <!--/.Controls-->
+        </div>
+        <!--/.Carousel Wrapper-->
+
+    </header>
+
+    <!-- Menu and Cards -->
+    <main class="container">
+      <h1 class="section-title">nossas especialidades!</h1>
+
+      <!-- Cards -->
+      <div class="cards-container">
+
+         <!-- First card -->
+
+          <div class="card">
+            <img src="/assets/images/Sweets.png">
+            <h3 >DOCINHOS</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Temporibus ipsam mollitia delectus animi est deleniti impedit 
+                                        corrupti excepturi omnis expedita. Alias rem esse, dolor debitis 
+                                        unde excepturi. Similique, fugiat libero.</p>
+          </div>
+          <!-- First card -->
+          <!-- Second card -->
+          <div class="card">
+            <img src="/assets/images/Pies.png">
+            <h3>TORTAS</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Temporibus ipsam mollitia delectus animi est deleniti impedit 
+                                        corrupti excepturi omnis expedita. Alias rem esse, dolor debitis 
+                                        unde excepturi. Similique, fugiat libero.</p>
+          </div>
+          <!-- Second card -->
+          <!-- Third card -->
+          <div class="card">
+            <img src="/assets/images/Cake.png">
+            <h3 >BOLOS</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Temporibus ipsam mollitia delectus animi est deleniti impedit 
+                                        corrupti excepturi omnis expedita. Alias rem esse, dolor debitis 
+                                        unde excepturi. Similique, fugiat libero.</p>
+          </div>
+           <!-- Third card -->
+      </div>
+      <!-- Cards -->
   
-    <div class="collapse navbar-collapse order-lg-4 order-4" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">COMO ENCOMENDAR<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">FALE CONOSCO<span class="sr-only">(current)</span></a>
-        </li>
-    </div>
-  </nav>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <!-- Menu -->
+       <!-- Menu -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>
