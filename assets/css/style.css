@@ -3,10 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--pinkish);
-    width: 100%;
+
+    width: 100vw;
+
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+
+    background-color: var(--pinkish);
+
 }
 
 .site-header-top img {
@@ -19,7 +23,7 @@
     align-items: center;
     flex-direction: row;
 
-    width: 100%;
+    width: 100vw;
     height: 4rem;
 
     padding-top: 1rem;
@@ -52,14 +56,17 @@
 
 .view {
     height: 100%;
-    width: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel,
 .carousel-item,
 .carousel-item.active {
     height: 100%;
-    width: 100%;
+    width: 100vw;
 
 }
 .carousel-inner {
@@ -88,12 +95,6 @@
 .carousel-control-prev-icon {
     height: 10px;
     width: 10px;
-}
-
-.view {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .view ul {
@@ -137,14 +138,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
     width: 100vw;
 }
 
 .section-title {
     font-family: Dancing Script;
     font-size: 50px;
-    padding-top: 20px
+    padding: 20px 0px 20px 0px;
+
 }
 
 /* Cards */
@@ -155,12 +156,16 @@
     justify-content: center;
     align-items: center;
 }
+
 .card {
     display: flex;
     align-items: center;
-    text-align: center;
+
     width: 263px;
     height: 449px;
+
+    text-align: center;
+
     border: none;
 }
 
@@ -190,7 +195,8 @@
 
 .attribution {
     background-color: var(--dark-brown); 
-    width: 100%; 
+    width: 100vw;
+
     color: var(--light-brown); 
     height: 60px; 
     font-family: Nanum Gothic; 
@@ -200,6 +206,7 @@
     display: flex; 
     justify-content: center; 
     align-items: center;
+
 }
 
 
@@ -262,6 +269,7 @@
     position: absolute;
     top: 0;
 
+
     z-index: 10;
 
     }
@@ -273,16 +281,21 @@
     .animated-icon3 {
     width: 30px;
     height: 20px;
+
     position: relative;
+
     margin: 0px;
+
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
+    
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
+
     cursor: pointer;
 
     z-index: 11;
@@ -301,6 +314,7 @@
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
+
     -webkit-transition: .25s ease-in-out;
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
@@ -311,7 +325,6 @@
     background: var(--orange);
     }
     .animated-icon3 span:nth-child(1) {
-
     top: 0px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
@@ -327,7 +340,6 @@
     }
 
     .animated-icon3 span:nth-child(3) {
-
     top: 20px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
