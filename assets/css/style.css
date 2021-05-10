@@ -9,12 +9,41 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 
-    background-color: var(--pinkish);
-
+    background-color: var(--yellowish);
+    
 }
 
 .site-header-top img {
     height: 70px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 997;
+}
+
+.onMoveHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 95px;
+}
+
+.onMoveHeader img {
+    padding-left: 40px;
+}
+
+.onMoveNavbar {
+    padding-right: 20px;
+}
+
+.onMoveHeader .nav-item .nav-link {
+    color: var(--dark-brown);
+}
+
+.onMoveHeader .nav-item .nav-link:hover {
+    color: var(--light-brown);
 }
 
 .main-menu {
@@ -30,6 +59,7 @@
     padding-bottom: 1rem;
 
     background-color: var(--dark-brown);
+
 }
 
 .main-menu .nav-item .nav-link {
@@ -65,26 +95,30 @@
 .carousel,
 .carousel-item,
 .carousel-item.active {
-    height: 100%;
+    height: 100vh;
     width: 100vw;
 
 }
 .carousel-inner {
     height: 100%;
+    width: 100vw;
 }
 .carousel-item:nth-child(1) {
+    width: 100vw;
     background-image: url("../images/cake-1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 .carousel-item:nth-child(2) {
+    width: 100vw;
     background-image: url("../images/cake-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 .carousel-item:nth-child(3) {
+    width: 100vw;
     background-image: url("../images/cake-1.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,6 +129,10 @@
 .carousel-control-prev-icon {
     height: 10px;
     width: 10px;
+}
+
+.carousel-indicators {
+    z-index: 1;
 }
 
 .view ul {
@@ -131,9 +169,10 @@
     height: 60px;
     background-color: var(--light-brown)
 }
-/* Menu and Cards */
 
-.container {
+/*About Us and Cards */
+
+.container-main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -141,14 +180,64 @@
     width: 100vw;
 }
 
+/* About Us  */
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    background-color: var(--light-brown);
+
+    height: 327px;
+    width: 100vw;
+    
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 500px;
+    height: 327px;
+}
+
+.text-block h1 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+    color: white; 
+    font-size: 40px; 
+    font-family: Nanum Gothic;
+    font-weight: 700;
+    text-transform: uppercase; 
+    letter-spacing: 7px;
+
+    padding: 20px 0px 10px 0px
+}
+
+.text-block p {
+    font-family: Playfair Display;
+    font-size: 16px;
+    text-align: center;
+
+    padding: 0px 10px 10px 10px; 
+}
+
+/* Cards Section */
+
 .section-title {
     font-family: Dancing Script;
     font-size: 50px;
     padding: 20px 0px 20px 0px;
 
-}
+    text-align: center;
 
-/* Cards */
+}
 
 .cards-container {
     display: flex;
@@ -167,6 +256,7 @@
     text-align: center;
 
     border: none;
+
 }
 
 .card:nth-child(2) {
@@ -176,6 +266,7 @@
 .card img {
     width: 217.45px;
     height: 217.45px;
+    padding-bottom: 8px;
 }
 
 .card h3 {
@@ -184,13 +275,58 @@
     font-size: 16px;
     line-height: 18px;
 
-    padding-top: 10px;
+    padding: 10px 0px 10px 0px;
 }
 
 .card p {
     text-align: center;
     font-family: Playfair Display;
     font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.footer {
+    background-color: var(--light-brown);
+    /* height: 60px; */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    /* adicionar height aqui */
+    padding: 10px 0px 10px 0px;
+}
+
+.social-media-buttons {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+    transition: 0.3s;
+}
+
+.social-media-buttons:hover {
+    background-color: var(--dark-brown);
+}
+
+.social-media-container a {
+    color: var(--dark-brown);
+    transition: 0.3s;
+}
+
+.social-media-container a:hover {
+    color: white;
 }
 
 .attribution {
@@ -198,7 +334,7 @@
     width: 100vw;
 
     color: var(--light-brown); 
-    height: 60px; 
+    height: 40px; 
     font-family: Nanum Gothic; 
     text-transform: uppercase; 
     font-weight: 200; 
@@ -206,14 +342,16 @@
     display: flex; 
     justify-content: center; 
     align-items: center;
-
 }
 
+.attribution a:visited {
+    color: white;
+}
 
 @media screen and (max-width: 991px) {
     /* Navbars (Mobile, Top and Sticky) */
     .navbar-toggler {
-    display: flex;
+        display: flex;
     }
     .site-header-top {
     justify-content: space-between;
@@ -222,7 +360,7 @@
     }
     .site-header-top img {
     height: 50px;
-    padding-left: 25px;
+    padding-left: 10px;
     }
     .navbar-light .navbar-toggler {
     border: none;
@@ -266,21 +404,37 @@
     height: 100vh;
     width: 100vw;
 
-    position: absolute;
+    position: fixed;
     top: 0;
+    left: 0;
 
-
-    z-index: 10;
+    z-index: 997;
 
     }
     .navbar-light .nav-item .nav-link:hover {
     color: var(--dark-brown);
     }
+    .social-media-container a {
+        color: var(--dark-brown);
+        transition: 0.3s;
+    }
+    .footer {
+        display: none;
+    }
+    .social-media-buttons {
+        height: 40px;
+        width: 40px;
+        border-radius: 40px;   
+    }
+    #scroll-navbar {
+        display: none;
+    } 
 
     /* Hamburguer button */
     .animated-icon3 {
     width: 30px;
     height: 20px;
+    padding-right: 20px;
 
     position: relative;
 
@@ -298,7 +452,7 @@
 
     cursor: pointer;
 
-    z-index: 11;
+    z-index: 999;
     }
 
     .animated-icon3 span {
@@ -386,5 +540,11 @@
     }
     .attribution {
         height: 50px; 
+    }
+    .cards-container {
+        flex-direction: column;
+    }
+    .text-block {
+        width: 327px;
     }
 }

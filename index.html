@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -25,24 +27,48 @@
     <header class="site-header">
 
         <!-- Fixed to the top Logo Desktop Wrapper -->
-        <div class="site-header-top">
+        <div id="site-header-top" class="site-header-top">
 
-          <!-- Main logo -->
-            <img src="assets/images/logo.svg" alt="Kaza Bolos"><a href="#"></a></img>
             <!-- Main logo -->
+            <img id="logo-header" src="assets/images/logo.svg" alt="Kaza Bolos"><a href="#"></a></img>
+            <!-- Main logo -->
+
+            <!-- Sticky Desktop Navbar -->
+            <nav id="scroll-navbar" class="navbar navbar-expand-lg navbar-light d-none">
+                <div>
+                    <!-- Navbar items -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SOBRE NÓS<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">COMO ENCOMENDAR<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FALE CONOSCO<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <!-- Navbar items -->
+                </div>
+            </nav>
+            <!-- Sticky Desktop Navbar -->
 
             <!-- Hamburguer button for the mobile Navbar -->
             <button id="toggle-btn" onclick="animatedClose()" class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="animated-icon3"><span></span><span></span><span></span></div>
             </button>
             <!-- Hamburguer button for the mobile Navbar  -->
+
         </div>
         <!-- Fixed to the top Logo Desktop Wrapper -->
 
         <!-- Fixed to the top Navbar Desktop Wrapper -->
-        <nav class="navbar navbar-expand-lg navbar-light main-menu">
+        <nav id="desktop-navbar" class="navbar navbar-expand-lg navbar-light main-menu">
             <div>
-              <!-- Navbar items -->
+                <!-- Navbar items -->
                 <ul class="navbar-nav main-menu">
                     <li class="nav-item">
                         <a class="nav-link" href="#">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
@@ -63,8 +89,8 @@
         <!-- Fixed to the top Navbar Desktop Wrapper -->
 
         <!-- Navbar Mobile Wrapper -->
-        <nav class="site-header-mobile">
-          <!-- Navbar items -->
+        <nav id="mobile-navbar" class="site-header-mobile">
+            <!-- Navbar items -->
             <ul class="navbar-nav mobile-menu">
                 <li class="nav-item">
                     <a class="nav-link mobile-link" href="#">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
@@ -77,6 +103,19 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mobile-link" href="#">FALE CONOSCO<span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <div class="social-media-container">
+                        <a target="_blank" href="https://www.facebook.com/kazabolos">                
+                            <i class="fa fa-facebook-f social-media-buttons"></i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/kaza_bolos/">
+                            <i class="fa fa-instagram social-media-buttons"></i>
+                        </a>
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5511950598772&text=Olá, Andreia! Tudo bem?Eu gostaria de fazer uma encomenda.">
+                            <i class="fa fa-whatsapp social-media-buttons"></i>
+                        </a>
+                    </div>
                 </li>
             </ul>
             <!-- Navbar items -->
@@ -103,9 +142,6 @@
                     <div class="view">
                         <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
                             <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
-                                <br>
-                                <br>
-                                <br>
                                 <li>
                                     <h1 class="first-slide-title">NOVOS<br />SABORES</h1>
                                 </li>
@@ -184,62 +220,96 @@
 
     </header>
 
-    <!-- Menu and Cards -->
-    <main class="container">
+    <main class="container-main">
 
-      <h1 class="section-title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">nossas especialidades!</h1>
+        <!-- About Us  -->
+        <section class="aboutus">
+            <div class="text-block">
+                <h1>SOBRE NOS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Consequuntur quasi omnis, voluptatibus debitis illo recusandae 
+                    inventore! Et tenetur itaque saepe. Blanditiis velit totam explicabo, 
+                    dolorem dolores adipisci dignissimos optio ipsum.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, distinctio? 
+                </p>
+            </div>
+        </section>
+        <!-- About Us  -->
 
-      <!-- Cards -->
-      <div class="cards-container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
+        <!-- Specialties -->
+        <section class="specialties">
+            <h1 class="section-title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">nossas especialidades!</h1>
 
-         <!-- First card -->
-          <div class="card">
-            <img src="/assets/images/Sweets.png">
-            <h3 >DOCINHOS</h3>
-            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Temporibus ipsam mollitia delectus animi est deleniti impedit 
-                                        corrupti excepturi omnis expedita. Alias rem esse, dolor debitis 
-                                        unde excepturi. Similique, fugiat libero.</p>
-          </div>
-          <!-- First card -->
+            <!-- Cards -->
+            <div class="cards-container" >
 
-          <!-- Second card -->
-          <div class="card">
-            <img src="/assets/images/Pies.png">
-            <h3>TORTAS</h3>
-            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Temporibus ipsam mollitia delectus animi est deleniti impedit 
-                                        corrupti excepturi omnis expedita. Alias rem esse, dolor debitis 
-                                        unde excepturi. Similique, fugiat libero.</p>
-          </div>
-          <!-- Second card -->
+                <!-- First card -->
+                <div class="card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
+                    <img src="/assets/images/Sweets.png">
+                    <h3>DOCINHOS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Temporibus ipsam mollitia delectus animi est deleniti impedit
+                        corrupti excepturi omnis expedita. Alias rem esse, dolor debitis
+                        unde excepturi. Similique, fugiat libero.</p>
+                </div>
+                <!-- First card -->
 
-          <!-- Third card -->
-          <div class="card">
-            <img src="/assets/images/Cake.png">
-            <h3 >BOLOS</h3>
-            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Temporibus ipsam mollitia delectus animi est deleniti impedit 
-                                        corrupti excepturi omnis expedita. Alias rem esse, dolor debitis 
-                                        unde excepturi. Similique, fugiat libero.</p>
-          </div>
-           <!-- Third card -->
-      </div>
-      <!-- Cards -->
-  
-      <!-- Menu -->
-       <!-- Menu -->
+                <!-- Second card -->
+                <div class="card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <img src="/assets/images/Pies.png">
+                    <h3>TORTAS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Temporibus ipsam mollitia delectus animi est deleniti impedit
+                        corrupti excepturi omnis expedita. Alias rem esse, dolor debitis
+                        unde excepturi. Similique, fugiat libero.</p>
+                </div>
+                <!-- Second card -->
+
+                <!-- Third card -->
+                <div class="card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1600">
+                    <img src="/assets/images/Cake.png">
+                    <h3>BOLOS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Temporibus ipsam mollitia delectus animi est deleniti impedit
+                        corrupti excepturi omnis expedita. Alias rem esse, dolor debitis
+                        unde excepturi. Similique, fugiat libero.</p>
+                </div>
+                <!-- Third card -->
+            </div>
+            <!-- Cards -->
+
+        </section>
+        <!-- Specialties -->
+
+        <section style="height: 100vh; width: 100vw;" class="deliver">
+
+        </section>
 
     </main>
 
     <footer>
 
-      <!-- Footer -->
-      <!-- Footer -->
+        <!-- Footer -->
+        <div class="footer">
+            <!-- <h1>NOS SIGA NAS REDES SOCIAIS</h1> -->
+            <div class="social-media-container">
+                <a target="_blank" href="https://www.facebook.com/kazabolos">                
+                    <i class="fa fa-facebook-f social-media-buttons"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/kaza_bolos/">
+                    <i class="fa fa-instagram social-media-buttons"></i>
+                </a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5511950598772&text=Olá, Andreia! Tudo bem?Eu gostaria de fazer uma encomenda.">
+                    <i class="fa fa-whatsapp social-media-buttons"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Footer -->
 
-      <!-- Attribution -->
-      <div class="attribution">Feito e elaborado por	&nbsp;<a target="_blank" href="https://www.linkedin.com/in/ana-almeida-72bab8161/">Ana Almeida</a>&nbsp;e	&nbsp;<a target="_blank" href="https://www.linkedin.com/in/mariisneves/">Mariana Neves</a></div>
-      <!-- Attribution -->
+        <!-- Attribution -->
+        <div class="attribution">Feito e elaborado por &nbsp;<a target="_blank" href="https://www.linkedin.com/in/ana-almeida-72bab8161/">Ana Almeida</a>&nbsp;e &nbsp;<a target="_blank" href="https://www.linkedin.com/in/mariisneves/">Mariana Neves</a></div>
+        <!-- Attribution -->
     </footer>
 </body>
+
 </html>
