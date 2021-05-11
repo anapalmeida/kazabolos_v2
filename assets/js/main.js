@@ -3,15 +3,14 @@ $(function() {
     var scrollNavbar = document.getElementById("scroll-navbar");
     var sticky = header.offsetTop;
 
-    $(window).on('scroll', function () { 
+    $(window).on('scroll', function() {
         if (window.pageYOffset > sticky) {
-            
+
             if (screen.width <= 991 || screen.availWidth <= 991) {
                 header.classList.add("sticky");
                 header.classList.remove("onMoveHeader");
-                scrollNavbar.classList.add("d-none");
+                scrollNavbar.classList.remove("d-none");
                 header.classList.remove("onMoveNavbar");
-                console.log("passou")
             } else {
                 header.classList.add("sticky");
                 header.classList.add("onMoveHeader");
@@ -37,4 +36,3 @@ function animatedClose() {
 $(function() {
     AOS.init();
 });
-

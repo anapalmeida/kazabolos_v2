@@ -285,6 +285,28 @@
     padding-bottom: 8px;
 }
 
+.learn-more-button {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: white; 
+    border: 2px solid var(--dark-brown); 
+    color: var(--dark-brown); 
+    font-family: Nanum Gothic;
+    font-weight: 700;
+    text-transform: uppercase; 
+    font-size: 17px; 
+    width: 161px; 
+    height: 61px;
+    transition: 0.3s;
+}
+
+.learn-more-button:hover {
+    color: white; 
+    border-color: var(--light-brown);
+    background-color: var(--light-brown);
+}
+
 .footer {
     background-color: var(--light-brown);
     /* height: 60px; */
