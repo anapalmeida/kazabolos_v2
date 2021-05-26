@@ -7,6 +7,8 @@ var map = new mapboxgl.Map({
     zoom: 10 // starting zoom
 });
 
+map.addControl(new mapboxgl.NavigationControl());
+
 map.on('load', function () {
     // Add a data source containing GeoJSON data.
     map.addSource('sdp', {

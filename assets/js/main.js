@@ -33,26 +33,11 @@ $(function() {
     })
 });
 
-
-
 function animatedClose() {
     $('.animated-icon3').toggleClass('open');
     $('.mobile-menu').toggleClass('open');
 
 }
-
-// $(function() {
-// if (screen.width <= 991 || screen.availWidth << 991) {
-//     var slideIndicator = document.getElementById("slide_indicator");
-//     var slide = document.getElementById("slide");
-    
-//     frameid.parentNode.removeChild(slideIndicator);
-//     slideIndicator.remove()
-//     slideIndicator.parentElement.removeChild(slideIndicator);
-// }
-// });
-
-
 
 $(function() {
     AOS.init();
@@ -66,6 +51,3 @@ $(function() {
         select: selectgrop
       })
 });
-
-
-
