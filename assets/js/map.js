@@ -9,7 +9,7 @@ var map = new mapboxgl.Map({
 
 map.addControl(new mapboxgl.NavigationControl());
 
-map.on('load', function () {
+map.on('load', function() {
     // Add a data source containing GeoJSON data.
     map.addSource('sdp', {
         'type': 'geojson',
@@ -24,7 +24,7 @@ map.on('load', function () {
                         [-46.8988030686035, -23.569095634358636],
                         [-46.83340008398436, -23.528731435547535],
                         [-46.76868374487303, -23.491188699826143],
-                        [-46.86000759741209,-23.45607617334226], 
+                        [-46.86000759741209, -23.45607617334226],
 
                     ]
                 ]

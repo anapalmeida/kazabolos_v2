@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Roboto;
 }
 
 html,
@@ -43,13 +44,13 @@ a:hover {
 }
 
 .p {
-    font-family: Playfair Display;
+
     font-size: 16px;
     text-align: center;
 }
 
 .h3 {
-    font-family: Nanum Gothic;
+
     font-weight: 900;
     font-size: 16px;
     line-height: 18px;
@@ -79,7 +80,7 @@ a:hover {
 }
 
 .site-header-top img {
-    height: 70px;
+    height: 90px;
     transition: .32s;
 }
 
@@ -135,7 +136,7 @@ a:hover {
 
 .main-menu .nav-item .nav-link {
     color: white;
-    font-family: Julius Sans One;
+
     font-size: 14px;
     text-transform: uppercase;
     transition: 0.3s;
@@ -178,7 +179,7 @@ a:hover {
 
 .carousel-item:nth-child(1) {
     width: 100vw;
-    background-image: url("../images/cake-1.png");
+    background-image: url("../images/1_car.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -186,7 +187,7 @@ a:hover {
 
 .carousel-item:nth-child(2) {
     width: 100vw;
-    background-image: url("../images/cake-2.jpg");
+    background-image: url("../images/2_car.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -194,7 +195,7 @@ a:hover {
 
 .carousel-item:nth-child(3) {
     width: 100vw;
-    background-image: url("../images/cake-1.png");
+    background-image: url("../images/3_car.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -226,14 +227,14 @@ a:hover {
 }
 
 .first-slide-title {
-    font-family: Julius Sans One;
+
     text-align: center;
     font-size: 80px;
     color: white;
 }
 
 .first-slide-caption {
-    font-family: Playfair Display;
+
     font-size: 19px;
     text-align: center;
     color: white
@@ -244,7 +245,7 @@ a:hover {
     justify-content: center;
     align-items: center;
 
-    font-family: Julius Sans One;
+
     font-size: 15px;
     color: white;
 
@@ -270,10 +271,15 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 
+    background-image: url('../images/grafismo-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     background-color: var(--light-brown);
 
-    height: 269px;
+    height: 300px;
     width: 100vw;
 
 }
@@ -284,9 +290,9 @@ a:hover {
 }
 
 .text-block h1 {
-    color: white;
+
     font-size: 40px;
-    font-family: Nanum Gothic;
+
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -300,7 +306,7 @@ a:hover {
 }
 
 .specialties {
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 /* Cards Section */
@@ -312,6 +318,7 @@ a:hover {
 
     text-align: center;
 }
+
 .card {
     width: 263px;
     height: 200px;
@@ -357,12 +364,12 @@ a:hover {
     justify-content: center;
     align-items: center;
 
-    font-family: Nanum Gothic;
+
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1rem;
 
-    width: 8rem;
+    width: 220px;
     height: 4rem;
 
     white-space: nowrap;
@@ -384,9 +391,9 @@ a:hover {
     width: 100vw;
 }
 
-.index-delivery-cover-image  {
-    width: 100vw; 
-    height: 350px; 
+.index-delivery-cover-image {
+    width: 100vw;
+    height: 350px;
     position: relative;
     background-image: url("../images/delivery.jpg");
     background-repeat: no-repeat;
@@ -395,8 +402,8 @@ a:hover {
 }
 
 .index-delivery-content-container {
-    flex-direction: column; 
-    position: absolute; 
+    flex-direction: column;
+    position: absolute;
     padding-top: 20px;
 }
 
@@ -404,26 +411,27 @@ a:hover {
     flex-direction: column;
 }
 
-.index-delivery-content-text  h1 {
+.index-delivery-content-text h1 {
     color: white;
 }
- .index-delivery-content-text p {
-    color: white; 
-    padding-top: 10px;
- }
- 
- .order-button {
-    color:white; 
-    border-color: white; 
-    background-color: rgba(0, 0, 0, 0); 
-    width: 220px;
- }
 
- .order-button:hover {
-    color:white; 
-    border-color: white; 
-    background-color: rgba(0, 0, 0, 0); 
- }
+.index-delivery-content-text p {
+    color: white;
+    padding-top: 10px;
+}
+
+.order-button {
+    color: white;
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.order-button:hover {
+    color: white;
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
 
 .footer {
     background-color: var(--light-brown);
@@ -479,7 +487,7 @@ a:hover {
 
     color: var(--light-brown);
     height: 40px;
-    font-family: Nanum Gothic;
+
     text-transform: uppercase;
     font-weight: 200;
     font-size: 10px;
@@ -562,6 +570,35 @@ a:hover {
     font-size: 12px
 }
 
+.menu-header,
+.menu-content-container {
+    flex-direction: column;
+}
+
+#photos-cards {
+    padding-top: 40px
+}
+
+.menu-table-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80vw;
+    padding-bottom: 40px;
+}
+
+.menu-column {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.menu-column-header {
+    font-weight: 700;
+}
+
+
+
 @media screen and (max-width: 991px) {
 
     /* Navbars (Mobile, Top and Sticky) */
@@ -576,7 +613,7 @@ a:hover {
     }
 
     .site-header-top img {
-        height: 50px;
+        height: 70px;
         padding-left: 10px;
 
     }
@@ -622,7 +659,7 @@ a:hover {
 
         background-color: var(--dark-brown);
 
-        font-family: Julius Sans One;
+
         font-size: 15px;
         color: white;
 
@@ -774,6 +811,7 @@ a:hover {
 
     .aboutus {
         height: 487px;
+
     }
 
     .text-block {
@@ -787,20 +825,25 @@ a:hover {
     .text-block h1 {
         font-size: 36px;
     }
+
     .section-title {
         font-size: 54px;
     }
+
     .cards-container {
         flex-direction: column;
     }
+
     .card:nth-child(2) {
         margin: 0px 0px 0px 0px
     }
+
     .index-delivery img {
-        width: 100vw; 
-        height: 350px; 
+        width: 100vw;
+        height: 350px;
         position: relative;
     }
+
     .attribution {
         height: 50px;
     }
@@ -837,5 +880,33 @@ a:hover {
         padding: 20px;
         justify-content: center;
     }
-   
+
+    .menu-table-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu-column {
+        width: 90vw;
+    }
+
+    .menu-column-title-two {
+        display: none;
+    }
+
+    .menu-column-snd-st {
+        width: 80px;
+    }
+
+    .prestigio,
+    .branco {
+        align-self: flex-start;
+        height: 50px;
+    }
+
+    .index-delivery-content-text h1 {
+        font-size: 35px;
+    }
 }

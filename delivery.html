@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
@@ -35,7 +33,7 @@
 
             <!-- Main logo -->
             <a href="./index.html">
-                <img id="logo-header" src="assets/images/logo.svg" alt="Logo da Kaza Bolos"><a href="#"></a></img>
+                <img id="logo-header" src="assets/images/logo_d3.png" alt="Logo da Kaza Bolos"><a href="#"></a></img>
             </a>
             <!-- Main logo -->
 
@@ -51,7 +49,7 @@
                             <a class="nav-link" href="./index.html#sobre-nos">SOBRE NÓS<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="./menu.html">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./delivery.html">ENCOMENDAS<span class="sr-only">(current)</span></a>
@@ -85,7 +83,7 @@
                         <a class="nav-link" href="./index.html#sobre-nos">SOBRE NÓS<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./menu.html">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./delivery.html">ENCOMENDAS<span class="sr-only">(current)</span></a>
@@ -110,7 +108,7 @@
                     <a class="nav-link mobile-link" href="./index.html#sobre-nos">SOBRE NÓS<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mobile-link" href="#">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
+                    <a class="nav-link mobile-link" href="./menu.html">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mobile-link" href="./delivery.html">ENCOMENDAS<span class="sr-only">(current)</span></a>
@@ -120,13 +118,13 @@
                 </li>
                 <li>
                     <div class="social-media-container">
-                        <a target="_blank" href="https://www.instagram.com/kaza_bolos/">
+                        <a target="_blank" href="https://www.instagram.com/kazabolos/">
                             <i class="fa fa-instagram social-media-buttons"></i>
                         </a>
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5511950598772&text=Olá, Andreia! Tudo bem?Eu gostaria de fazer uma encomenda.">
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5511950598772&text=Olá, Andreia! Tudo bem? Gostaria de fazer uma encomenda.">
                             <i class="fa fa-whatsapp social-media-buttons"></i>
                         </a>
-                        <a target="_blank" href="https://www.facebook.com/kazabolos">
+                        <a target="_blank" href="https://www.facebook.com/kazabolosoficial">
                             <i class="fa fa-facebook-f social-media-buttons"></i>
                         </a>
                     </div>
@@ -140,10 +138,10 @@
         <section class="center">
             <div class="delivery-header-container center">
                 <h1 class="section-title center">encomendas</h1>
-                <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequuntur quasi omnis, voluptatibus debitis illo recusandae
-                    inventore! Et tenetur itaque saepe. Blanditiis velittotam explicabo,
-                    dolorem dolores adipisci dignissimos optio ipsum.
+                <p class="p">
+                    Os clientes da Kaza Bolos podem contar com o delivery de encomendas para
+                    as cidades de Barueri e Santana de Parnaíba. Ao fazer o pedido pelo site,
+                    nós entraremos em contato para fazer a confirmação e definir a forma de pagamento.
                 </p>
             </div>
         </section>
@@ -169,7 +167,7 @@
 
             <!-- Delivery form -->
             <div class="delivery-form-container center">
-                <form class="center" action="./assets/php/delivery.php" method="POST" >
+                <form class="center" method="POST" action="./assets/php/delivery.php">
                     <div class="row">
                         <div class="col-lg-12 col-sm-12 center">
                             <h3 style="padding: 10px 0px 10px 0px;" class="h3">faça seu pedido</h3>
@@ -187,12 +185,12 @@
                             <input required name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value)" placeholder="CEP" class="form-control" /><br>
                         </div>
 
-                        <div class="col-12" >
+                        <div class="col-12">
                             <input readonly class="form-control" name="rua" type="text" id="rua" placeholder="Rua" class="form-control" /><br>
                         </div>
 
 
-                        
+
                         <div class="col-4">
                             <input required placeholder="Nº" class="form-control" name="numero" type="text" id="numero" /><br>
                         </div>
@@ -218,8 +216,10 @@
                         </div>
 
                         <div class="col-12">
-                            <select required id="multiple-optgroups" multiple>
-                                <option data-placeholder="true">Produtos</option>
+                            <textarea placeholder="Pedidos" id="pedidos" name="pedidos" class="form-control"></textarea><br>
+                            <!-- <select required id="multiple-optgroups" multiple> -->
+                            <!-- <select required name='opt[]' id="multiple-optgroups" multiple>
+                                <option data-placeholder="true" name="produtos">Produtos</option>
                                 <optgroup label="Bolos">
                                     <option value="value 1">Value 1</option>
                                     <option value="value 2">Value 2</option>
@@ -242,7 +242,7 @@
                                 </optgroup>
                             </select>
                             <br />
-                            <br />
+                            <br /> -->
 
                         </div>
                         <div class="col-4">
@@ -255,7 +255,8 @@
                             <textarea placeholder="Observações" id="obs" name="obs" class="form-control"></textarea><br>
                         </div>
                         <div class="col-12">
-                            <button class="learn-more-button delivery-button" type="submit">FINALIZAR PEDIDO</button>
+                            <!-- <button class="learn-more-button delivery-button" type="submit">FINALIZAR PEDIDO</button> -->
+                            <button class="learn-more-button delivery-button" name="submit" id="submit" type="submit">FINALIZAR PEDIDO</button>
                         </div>
                     </div>
                 </form>
@@ -273,62 +274,65 @@
         <section id="contato" class="contact-container center">
 
 
-                <div class="delivery-header-container center">
-                    <h1 class="section-title center">contato</h1>
-                    <p class="p" style="padding-bottom: 20px;">
-                        Para mais informações entre em contato pelas redes sociais:
-                    </p>
-                </div>
+            <div class="delivery-header-container center">
+                <h1 class="section-title center">contato</h1>
+                <p class="p" style="padding-bottom: 20px;">
+                    Para mais informações entre em contato pelas redes sociais:
+                </p>
+            </div>
 
 
             <div class="contact-cards-container center">
-                
+
                 <div class="contact-card center">
-                    <a href="https://api.whatsapp.com/send?phone=5511950598772" target="_blank"><div class="contact-card-circle center"><i class="fa fa-whatsapp" aria-hidden="true"></i></i></div></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511950598772" target="_blank">
+                        <div class="contact-card-circle center"><i class="fa fa-whatsapp" aria-hidden="true"></i></i></div>
+                    </a>
                     <div class="contact-card-text-container">
-                       <h3 class="h3">WHATSAPP</h3>
+                        <h3 class="h3">WHATSAPP</h3>
                         <p class="p"><a href="https://api.whatsapp.com/send?phone=5511950598772" target="_blank">(11) 9-5059-8772</a></p>
                     </div>
                 </div>
-                
+
                 <div class="contact-card center">
-                    <a href="fb.com/kaza_bolos" target="_blank"><div class="contact-card-circle center"><i class="fa fa-facebook" aria-hidden="true"></i></i></div></a>
-                    <div class="contact-card-text-container">
-                       <h3 class="h3">FACEBOOK</h3>
-                        <p class="p"><a href="fb.com/kaza_bolos" target="_blank">fb.com/kaza_bolos</a></p>
-
-                    </div>
-                </div>
-
-
-            
-                <div class="contact-card center">
-                    <a href="https://www.instagram.com/kaza_bolos/" target="_blank">
-                        <div class="contact-card-circle center">
-                            <i class="fa fa-instagram" aria-hidden="true">
-                            </i>
-                            </i>
-                        </div>
+                    <a href="https://www.facebook.com/kazabolosoficial" target="_blank">
+                        <div class="contact-card-circle center"><i class="fa fa-facebook" aria-hidden="true"></i></i></div>
                     </a>
                     <div class="contact-card-text-container">
-                       <h3 class="h3">INSTAGRAM</h3>
-                        <p class="p"><a href="https://www.instagram.com/kaza_bolos/" target="_blank">@kaza_bolos</a></p>
+                        <h3 class="h3">FACEBOOK</h3>
+                        <p class="p"><a href="https://www.facebook.com/kazabolosoficial" target="_blank">fb.com/kaza_bolos</a></p>
+
                     </div>
+                </div>
+
+
+
+                <div class="contact-card center">
+
+
+                    <a href="https://www.instagram.com/kazabolos/" target="_blank">
+                        <div class="contact-card-circle center"><i class="fa fa-facebook" aria-hidden="true"></i></i></div>
+                    </a>
+                    <div class="contact-card-text-container">
+                        <h3 class="h3">INSTAGRAM</h3>
+                        <p class="p"><a href="https://www.instagram.com/kazabolos/" target="_blank">@kazabolos</a></p>
+                    </div>
+
                 </div>
 
 
 
 
                 <div class="contact-card center">
-                    <a href="fb.com/kaza_bolos" target="_blank"><div class="contact-card-circle center"><i class="fa fa-envelope" aria-hidden="true"></i></i></div></a>
+                    <a href="mailto:kazabolos@gmail.com" target="_blank">
+                        <div class="contact-card-circle center"><i class="fa fa-envelope" aria-hidden="true"></i></i></div>
+                    </a>
                     <div class="contact-card-text-container">
-                       <h3 class="h3">EMAIL</h3>
-                        <p class="p"><a href="#" target="_blank">kazabolos@foo.com</a></p>
+                        <h3 class="h3">EMAIL</h3>
+                        <p class="p"><a href="mailto:kazabolos@gmail.com" target="_blank">kazabolos@gmail.com</a></p>
 
                     </div>
                 </div>
-
-
 
             </div>
 

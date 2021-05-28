@@ -12,14 +12,14 @@ $(function() {
                 scrollNavbar.classList.remove("d-none");
                 header.classList.remove("spaced-between");
                 header.classList.remove("onMoveNavbar");
-                
+
             } else {
                 header.classList.add("sticky");
                 header.classList.add("onMoveHeader");
                 header.classList.add("spaced-between");
                 scrollNavbar.classList.remove("d-none");
                 header.classList.add("onMoveNavbar");
-                
+
             }
 
         } else {
@@ -28,7 +28,7 @@ $(function() {
             header.classList.remove("spaced-between");
             scrollNavbar.classList.add("d-none");
             header.classList.remove("onMoveNavbar");
-            
+
         }
     })
 });
@@ -49,5 +49,5 @@ $(function() {
     var selectgrop = document.getElementById("multiple-optgroups");
     new SlimSelect({
         select: selectgrop
-      })
+    })
 });
