@@ -1,0 +1,351 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="assets/js/main.js"></script>
+    <title>Kaza Bolos</title>
+</head>
+<body>
+
+    
+    <header class="site-header">
+
+        <!-- Fixed to the top Logo Desktop Wrapper -->
+        <div id="site-header-top" class="site-header-top">
+
+            <!-- Main logo -->
+            <a href="./index.html">
+                <img id="logo-header" src="assets/images/logo_d3.png" alt="Logo da Kaza Bolos"><a href="#"></a></img>
+            </a>
+            <!-- Main logo -->
+
+            <!-- Sticky Desktop Navbar -->
+            <nav id="scroll-navbar" class="navbar navbar-expand-lg navbar-light d-none">
+                <div>
+                    <!-- Navbar items -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">PÁGINA INICIAL<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#sobre-nos">SOBRE NÓS<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./menu.html">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./delivery.html">ENCOMENDAS<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./delivery.html#contato">CONTATO<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <!-- Navbar items -->
+                </div>
+            </nav>
+            <!-- Sticky Desktop Navbar -->
+
+            <!-- Hamburguer button for the mobile Navbar -->
+            <button id="toggle-btn" onclick="animatedClose()" class="navbar-toggler order-2 d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="animated-icon3"><span></span><span></span><span></span></div>
+            </button>
+            <!-- Hamburguer button for the mobile Navbar  -->
+
+        </div>
+
+        <!-- Fixed to the top Navbar Desktop Wrapper -->
+        <nav id="desktop-navbar" class="navbar navbar-expand-lg navbar-light main-menu">
+            <div>
+                <!-- Navbar items -->
+                <ul class="navbar-nav main-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">PÁGINA INICIAL<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#sobre-nos">SOBRE NÓS<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./delivery.html">ENCOMENDAS<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./delivery.html#contato">CONTATO<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <!-- Navbar items -->
+            </div>
+        </nav>
+        <!-- Fixed to the top Navbar Desktop Wrapper -->
+
+        <!-- Navbar Mobile Wrapper -->
+        <nav id="mobile-navbar" class="site-header-mobile">
+            <!-- Navbar items -->
+            <ul class="navbar-nav mobile-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">PÁGINA INICIAL<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-link" href="./index.html#sobre-nos">SOBRE NÓS<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-link" href="./menu.html">NOSSO CARDÁPIO<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-link" href="./delivery.html">ENCOMENDAS<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile-link" href="./delivery.html#contato">CONTATO<span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <div class="social-media-container">
+                        <a target="_blank" href="https://www.instagram.com/kazabolos/">
+                            <i class="fa fa-instagram social-media-buttons"></i>
+                        </a>
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5511950598772&text=Olá, Andreia! Tudo bem? Gostaria de fazer uma encomenda.">
+                            <i class="fa fa-whatsapp social-media-buttons"></i>
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/kazabolosoficial">
+                            <i class="fa fa-facebook-f social-media-buttons"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <!-- Navbar items -->
+        </nav>
+        <!-- Navbar Mobile Wrapper -->
+
+
+
+    </header>
+
+    <main style="padding: 10px; width: 100v;">
+        <section>
+            <br>
+            <h3>Política de Privacidade</h3><br>
+            <p>A Kaza Bolos, no papel de Controladora de Dados, se compromete com a transparência
+                no tratamento de dados pessoais dos nossos clientes. Por isso, esta presente Política
+                de Privacidade estabelece como é feita a coleta, uso e transferência de informações de
+                clientes que usam nosso site.
+            </p><br>
+            <p>
+                Ao utilizar nossos serviços, você entende que coletaremos e usaremos suas informações
+                pessoais nas formas descritas nesta Política, sob as normas de Proteção de Dados (LGPD,
+                Lei Federal 13.709/2018), das disposições consumeristas da Lei Federal 8078/1990 e as
+                demais normas do ordenamento jurídico brasileiro aplicáveis.
+            </p><br>
+            <ol style="list-style-type: decimal-leading-zero;">
+                <strong>
+                    <li class="focused-title">Dados pessoais coletados e finalidade</li>
+                </strong><br>
+                <p>No formulário “Faça seu Pedido”, solicitamos o fornecimento de seu
+                    nome completo, para identificá-lo apropriadamente, seu telefone, para
+                    que possamos entrar em contato e prosseguir com o pedido e endereço,
+                    para complementar as informações referentes a entrega dos pedidos.
+                </p><br>
+                <strong>
+                    <li class="focused-title">Consentimento</li>
+                </strong><br>
+                <p>
+                    Ao utilizar os serviços da Kaza Bolos e fornecer seus dados pessoais,
+                    você está ciente e consentindo com as disposições desta Política de Privacidade,
+                    além de conhecer seus direitos e como exercê-los.
+                </p><br>
+                <p>
+                    A qualquer tempo e sem nenhum custo, você poderá revogar seu consentimento.
+                </p>
+                <p>
+                    É importante destacar que a revogação do consentimento para o tratamento dos
+                    dados pode implicar na impossibilidade de finalizar o pedido realizado.
+                </p><br>
+
+                <strong>
+                    <li class="focused-title">Quais são os seus direitos?</li>
+                </strong><br>
+                <p>A Kaza Bolos assegura a seus clientes seus direitos de titular previstos no
+                    artigo 18 da Lei Geral de Proteção de Dados. Dessa forma, você pode, de maneira
+                    gratuita e a qualquer tempo
+                </p><br>
+                <ul>
+                    <li><strong class="focused-title">Confirmar a existência de tratamento de dados</strong>, de maneira simplificada ou em formato claro e completo.</li>
+                    <li><strong class="focused-title">Acessar seus dados</strong>, podendo solicitá-los em uma cópia legível sob forma impressa ou por meio eletrônico, seguro e idôneo.</li>
+                    <li><strong class="focused-title">Corrigir seus dados</strong>, ao solicitar a edição, correção ou atualização destes.</li>
+                    <li><strong class="focused-title">Limitar seus dados </strong>quando desnecessários, excessivos ou tratados em desconformidade com a legislação através da anonimização, bloqueio ou eliminação.</li>
+                    <li><strong class="focused-title">Solicitar a portabilidade de seus dados</strong>, através de um relatório de dados cadastrais que a Kaza Bolos trata a seu respeito.</li>
+                    <li><strong class="focused-title">Eliminar seus dados </strong>tratados a partir de seu consentimento, exceto nos casos previstos em lei.</li>
+                    <li><strong class="focused-title">Revogar seu consentimento</strong>, desautorizando o tratamento de seus dados.</li>
+                    <li><strong class="focused-title">Informar-se sobre a possibilidade de não fornecer seu consentimento </strong>e sobre as consequências da negativa.</li>
+                </ul><br>
+                <strong>
+                    <li class="focused-title">Como e por quanto tempo seus dados serão armazenados?</li>
+                </strong><br>
+                <p>Os dados pessoais coletados pela Kaza Bolos serão utilizados e armazenados durante o tempo necessário
+                    para o processamento do pedido e compra de nossos produtos. Findado o período de armazenamento dos dados
+                    pessoais, estes serão excluídos de nossas bases de dados ou anonimizados, salvo as hipóteses legalmente
+                    previstas no artigo 16 da LGPD, a saber:
+                </p><br>
+                <ol type="I">
+                    <li>cumprimento de obrigação legal ou regulatória pelo controlador;</li><br>
+                    <li>estudo por órgão de pesquisa, garantida, sempre que possível, a anonimização dos dados pessoais;</li><br>
+                    <li>transferência a terceiro, desde que respeitados os requisitos de tratamento de dados dispostos nesta Lei; ou</li><br>
+                    <li>uso exclusivo do controlador, vedado seu acesso por terceiro, e desde que anonimizados os dados.</li><br>
+                </ol><br>
+                <strong>
+                    <li class="focused-title">O que fazemos para manter seus dados seguros?</li>
+                </strong><br>
+                <p>Para mantermos suas informações pessoais seguras, usamos ferramentas físicas,
+                    eletrônicas e gerenciais orientadas para a proteção da sua privacidade.
+                </p><br>
+                <p>Entre as medidas que adotamos, destacamos que apenas pessoas autorizadas têm
+                    acesso a seus dados pessoais; o acesso a seus dados pessoais é feito somente após
+                    o compromisso de confidencialidade; seus dados pessoais são armazenados em ambiente
+                    seguro e idôneo.
+                </p><br>
+                <strong>
+                    <li class="focused-title">Com quem seus dados podem ser compartilhados?</li><br>
+                </strong>
+                <p>Tendo em vista a preservação de sua privacidade, a Kaza Bolos não compartilhará seus
+                    dados pessoais com nenhum terceiro não autorizado.
+                </p><br>
+                <p>Porém, existem outras hipóteses em que seus dados poderão ser compartilhados, que são:</p><br>
+                <ol type="I">
+                    <li>Determinação legal, requerimento, requisição ou ordem judicial, com autoridades
+                        judiciais, administrativas ou governamentais competentes.
+                    </li><br>
+                    <li>
+                        Caso de movimentações societárias, como fusão, aquisição e incorporação, de forma automática.
+                    </li><br>
+                    <li>
+                        Proteção dos direitos da Kaza Bolos em qualquer tipo de conflito, inclusive os de teor judicial.
+                    </li>
+                </ol><br>
+                <strong>
+                    <li class="focused-title">Cookies ou dados de navegação</li><br>
+                </strong>
+                <p>A Kaza Bolos não faz uso de cookies.</p><br>
+                <strong>
+                    <li class="focused-title">Alteração desta Política de Privacidade</li><br>
+                </strong>
+                <p>A atual versão da Política de Privacidade foi formulada e atualizada pela última vez em: 22/05/2021.</p><br>
+                <p>
+                    Reservamos o direito de modificar essa Política de Privacidade a qualquer tempo, principalmente em função
+                    da adequação a eventuais alterações feitas em nosso site ou em âmbito legislativo. Recomendamos que você
+                    a revise com frequência.
+                </p><br>
+                <p>
+                    Eventuais alterações entrarão em vigor a partir de sua publicação em nosso site e sempre lhe
+                    notificaremos acerca das mudanças ocorridas.
+                </p><br>
+                <p>
+                    Ao utilizar nossos serviços e fornecer seus dados pessoais após tais modificações, você as consente.
+                </p><br>
+                <strong>
+                    <li class="focused-title">Responsabilidade</li>
+                </strong><br>
+                <p>A Kaza Bolos prevê a responsabilidade dos agentes que atuam nos processos de tratamento de dados,
+                    em conformidade com os artigos 42 ao 45 da Lei Geral de Proteção de Dados.
+                </p><br>
+                <p>
+                    Nos comprometemos em manter esta Política de Privacidade atualizada, observando suas disposições
+                    e zelando por seu cumprimento.
+                </p><br>
+                <p>
+                    Além disso, também assumimos o compromisso de buscar condições técnicas e organizativas
+                    seguramente aptas a proteger todo o processo de tratamento de dados.
+                </p><br>
+                <p>
+                    Caso a Autoridade Nacional de Proteção de Dados exija a adoção de providências em
+                    relação ao tratamento de dados realizado pela Kaza Bolos, comprometemo-nos a segui-las.
+                </p><br>
+                <ol>
+                    <strong class="focused-title">
+                        <li class="focused-title">Isenção de responsabilidade
+                    </strong><br><br>
+                    <p>Embora adotemos elevados padrões de segurança a fim de evitar incidentes, não há
+                        nenhuma página virtual inteiramente livre de riscos. Nesse sentido, a Kaza Bolos
+                        não se responsabiliza por:
+                    </p><br>
+                    <ol type="I">
+                        <li>Quaisquer consequências decorrentes da negligência, imprudência ou imperícia
+                            dos usuários em relação a seus dados individuais. Garantimos e nos responsabilizamos
+                            apenas pela segurança dos processos de tratamento de dados e do cumprimento das finalidades
+                            descritas no presente instrumento.<br><br>
+                            <p>Destacamos que a responsabilidade em relação à confidencialidade dos
+                                dados de acesso é do usuário.
+                            </p>
+                        </li><br>
+
+                        <li>
+                            Ações maliciosas de terceiros, como ataques de hackers, exceto se comprovada conduta culposa
+                            ou deliberada da Kaza Bolos.<br><br>
+                            <p>
+                                Destacamos que em caso de incidentes de segurança que possam gerar risco ou dano relevante
+                                para você ou qualquer um de nossos clientes, comunicaremos aos afetados e a Autoridade Nacional
+                                de Proteção de Dados sobre o ocorrido e cumpriremos as providências necessárias.
+                            </p>
+                        </li><br>
+
+                        <li>
+                            Inveracidade das informações inseridas pelo usuário/cliente nos registros necessários para a
+                            utilização dos serviços da Kaza Bolos; quaisquer consequências decorrentes de informações falsas
+                            ou inseridas de má-fé são de inteiramente responsabilidade do usuário/cliente.
+                        </li>
+                    </ol>
+                </li>
+                </ol>
+                </li><br>
+
+                <strong>
+                    <li class="focused-title">Encarregado de Proteção de Dados</li>
+                </strong><br>
+                <p>
+                    Caso tenha dúvidas sobre esta Política de Privacidade ou sobre os dados pessoais que tratamos, você pode entrar em contato conosco por meio do nosso endereço eletrônico: <i>kazabolos@gmail.com</i>.
+                </p>
+
+            </ol>
+        </section>
+
+        <div style="padding-bottom: 30px; display: flex; justify-content: center; align-items: center;">
+            <a class="learn-more-button" href="./delivery.html">VOLTAR</a>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <!-- Footer -->
+        <div id="footer" class="footer">
+            <!-- <h1>NOS SIGA NAS REDES SOCIAIS</h1> -->
+            <div class="social-media-container">
+                <a target="_blank" href="https://www.instagram.com/kazabolos/">
+                    <i class="fa fa-instagram social-media-buttons"></i>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/kazabolosoficial/">
+                    <i class="fa fa-facebook-f social-media-buttons"></i>
+                </a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5511950598772&text=Olá, Andreia! Tudo bem? Gostaria de fazer uma encomenda.">
+                    <i class="fa fa-whatsapp social-media-buttons"></i>
+                </a>
+            </div>
+
+        </div>
+        <!-- Footer -->
+
+        <!-- Attribution -->
+        <div id="attribution" class="attribution">Feito e elaborado por &nbsp;<a target="_blank" href="https://www.linkedin.com/in/ana-almeida-72bab8161/">Ana Almeida</a>&nbsp;e &nbsp;<a target="_blank" href="https://www.linkedin.com/in/mariisneves/">Mariana Neves</a></div>
+        <!-- Attribution -->
+    </footer>
+</body>
+
+</html>
